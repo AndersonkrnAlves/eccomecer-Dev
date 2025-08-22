@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --primary-color: #FF4111;
+    --secondary-color: #2C3E50;
+    --accent-color: #3498DB;
+    --text-color: #2C3E50;
+    --light-gray: #F8F9FA;
+    --border-color: #E9ECEF;
+    --white-color: #FFFFFF;
+    --hover-btn: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    line-height: 1.6;
+    /* Altura da linha */
+}
+
+header {
+    background-color: var(--white-color);
+    padding: 16px 32px;
+    /* Espaçamento interno */
+    display: flex;
+    /* Usando Flexbox */
+    align-items: center;
+    /* Alinha itens verticalmente */
+    justify-content: space-around;
+    /* Espaço entre os itens */
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* Espaço entre o ícone e o texto */
+}
+
+h1 {
+    font-size: 32px;
+    /* Tamanho do texto */
+    color: var(--primary-color);
+    font-weight: bold;
+    /* Negrito */
+}
+
+.fa-bolt-lightning {
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container-busca {
+    width: 100%;
+    /* Largura total do container */
+    max-width: 500px;
+    /* Largura máxima do container */
+    margin: 0 32px;
+    /* Centraliza o container */
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    /* Espaçamento interno */
+    background-color: var(--light-gray);
+    border-radius: 24px;
+}
+
+.container-busca input {
+    width: 100%;
+    /* Largura total do input */
+    border: none;
+    /* Remove a borda padrão */
+    outline: none;
+    /* Remove o contorno ao focar */
+    cursor: pointer;
+    background-color: var(--light-gray);
+    padding: 8px;
+    /* Espaçamento interno */
+    font-size: 16px;
+    /* Tamanho do texto */
+
+}
+
+.fa-magnifying-glass {
+    color: var(--primary-color);
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.container-categorias nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    /* Espaço entre os botões */
+    width: 100%;
+    /* Largura total do container */
+    max-width: 1200px;
+    /* Largura máxima do container */
+    padding: 8px 32px;
+    /* Espaçamento interno */
+}
+
+.botao-categorias {
+    display: flex;
+    gap: 8px;
+    /* Espaço entre o ícone e o texto */
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    color: var(--white-color);
+    background: none;
+    /* Fundo transparente */
+    padding: 12px 24px;
+    /* Espaçamento interno */
+    cursor: pointer;
+}
+
+.botao-categorias:hover {
+    background-color: var(--hover-btn);
+    /* Cor de fundo ao passar o mouse */
+}
+
+.botao-categorias.ativo {
+    background-color: var(--primary-color);
+    /* Cor de fundo para o botão ativo */
+}
+
+.secao-hero {
+    background: #f7ff00;
+    background: linear-gradient(90deg, rgba(247, 255, 0, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 82%);
+    color: var(--white-color);
+    text-align: center;
+    padding: 48px 32px;
+    /* Espaçamento interno */
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 16px 0;
+    /* Espaçamento interno */
+}
+
+footer a {
+    color: var(--white-color);
+    text-decoration: none;
+    /* Remove o sublinhado */
+    margin: 0 8px;
+    /* Espaçamento entre os ícones */
+}
+
+footer img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
