@@ -82,3 +82,35 @@ let produtos = [
         descricao: "Notebook Windows premium"
     }
 ];
+
+let containerProdutos = document.querySelector(".produtos-container")
+
+function mostrarProdutos(){
+
+    let htmlProdutos = ""
+
+    produtos.forEach(prd => {
+
+
+        htmlProdutos = htmlProdutos + `
+            
+            <div class="cartao-produto">
+
+                <img src="${prd.imagem}" alt="imagem de um celular" class="imagem-produto">
+
+                <div class="info-produto">
+                    <h3 class="nome-produto">${prd.nome}</h3>
+                    <p class="descricao-produto">${prd.descricao}</p>
+                    <p class="preco-produto">R$ ${prd.preco}</p>
+                    <button class="botao-produto">Ver Detalhes</button>
+                </div>
+                
+            </div>
+        `
+    })
+
+    containerProdutos.innerHTML = htmlProdutos
+
+}
+
+mostrarProdutos()
